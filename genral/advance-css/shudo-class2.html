@@ -1,0 +1,48 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div p:first-child
+            {
+                color:greenyellow;
+            }
+            div+div>p:first-child{
+                color: red;
+            }
+            div~div+div>p:first-child
+            {
+                color: blue;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <div>
+            <p> this is paragraph first</p>
+            <p>this is paragraph second</p>
+            <p> this is paragraph third</p>
+            <p> this is paragraph forth</p>
+        </div>
+        <div>
+            <p> this is paragraph first</p>
+            <p>this is paragraph second</p>
+            <p> this is paragraph third</p>
+            <p> this is paragraph forth</p>
+        </div>
+        <div>
+            <p> this is paragraph first</p>
+            <p>this is paragraph second</p>
+            <p> this is paragraph third</p>
+            <p> this is paragraph forth</p>
+        </div>
+         <div>
+            <p> this is paragraph first</p>
+            <p>this is paragraph second</p>
+            <p> this is paragraph third</p>
+            <p> this is paragraph forth</p>
+        </div>
+    </body>
+</html>
