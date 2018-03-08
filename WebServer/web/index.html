@@ -1,0 +1,57 @@
+
+<html>
+    <head>
+        <title>calc using server</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #d1{
+                background-color: activecaption;
+                padding: 8px 1px 100px 1px;
+                margin-top: 0px;
+                margin-left: 520px;
+                margin-right: 520px;
+            }
+            #p1{
+                padding:10px 4px 10px 4px;
+                background-color:darkseagreen;
+                border-top-right-radius:6px;
+                border-top-left-radius: 6px;
+                 margin-left: 520px;
+                margin-right: 520px;
+                margin-bottom: 0px;
+            }
+            #p2{
+             
+                padding:10px 4px 10px 4px;
+                background-color:darkseagreen;
+               border-bottom-right-radius:6px;
+                border-bottom-left-radius: 6px; 
+                 margin-left: 520px;
+                margin-right: 520px;
+                margin-top: 0px;
+            }
+            #i1{
+                margin-top: 3px;
+                margin-left: 70px;
+            }
+            #b1{
+                background-image:linear-gradient(to top, green,blue)
+            }
+        </style>
+    </head>
+    <body id="b1">
+	<div>
+        <p align="center" id="p1"> TO Calculate SUB ADD DIV MUL </p>
+        <div id ="d1" align="center"> 
+            <form   name="f1" name="f2" action="mysrevlet">
+          First Value: <input type="text" name="n1"  ><br/></br>
+           Last Value: <input type="text" name="n2"><br>
+            <input id="i1" type="submit" name="b1" value="submit">
+           
+            </form>
+        </div>
+        <p id="p2"> Result Show Using Web Server</p>
+   </div>
+   </body>
+</html>

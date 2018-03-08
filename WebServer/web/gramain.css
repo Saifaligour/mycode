@@ -1,0 +1,28 @@
+#b1{
+    
+    background-image:linear-gradient(to top,green,orange,#04507b )
+}
+#d1{
+    float: left;
+   background-color:orange;
+   width:100px;
+     height: 100px;
+}
+#d2{
+        float: left;
+     background-color:yellow;
+   width:100px;
+     height: 100px;
+}
+#d3{
+        float: left;
+    background-color:blue;
+   width:100px;
+     height: 100px; 
+}
+#d4{
+        float: left;
+     background-color:blue;
+   width:100px;
+     height: 100px;
+}
