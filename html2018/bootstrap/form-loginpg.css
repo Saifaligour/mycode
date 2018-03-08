@@ -1,0 +1,33 @@
+body
+{
+    background-image: url("http://localhost:8383/HTML5/online-product-selling/slide42.jpg");
+}
+.f2
+{
+
+-webkit-box-shadow: 14px -1px 17px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px -1px 17px -8px rgba(0,0,0,0.75);
+box-shadow: 14px -1px 17px -8px rgba(0,0,0,0.75);
+
+}
+
+.f1
+{
+ border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000; 
+}
+.topto
+{
+    top:50%;
+    left:50%;
+    padding-top:200px; 
+}
+
+.albtn div
+{
+    margin-top:20px;
+    padding-bottom:24px; 
+    
+}

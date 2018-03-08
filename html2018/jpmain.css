@@ -1,0 +1,138 @@
+@charset "utf-8";
+/*CSS Documents
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption,  hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+footer, header{
+    border-radius: 12px;
+}
+body{
+    line-height: 1;
+   
+}
+ol,ul{
+    list-style: none;
+}
+    blockquote,q{
+        quotes: none;
+    }
+    table{
+        margin: 0px;
+    }
+   
+  .main{
+      width: 1250px; margin:0; 
+   }
+    .contener{
+        color:black; font-weight:600;margin:0px 0px 0px 0px;/*top right bottom left*/ font-size: 15px; float:left; background:#4587D9; 
+    }
+    .image{
+   width: 50%; height:5%;
+    }
+    .content{
+        line-height: 27px; background:orangered; color:#fff; font-family: Arial,helvetica,sans-serif;
+    width: 84%; padding:15px;}
+    .jp{margin-right:14px;margin-left:14px; margin-top: 10px; width:50%;}
+   
+    .contener span{margin-left: 10px;}
+    .contener select{
+        width:60px; background:#e6e6e6; border:solid 1px gray; color:#666666;  
+    }
+    .header{
+        width: 100%; background:#4587D9; height: 117px;
+    }
+     .bx-controls.bx-has-pager.bx-has-controls-direction { display:none;}
+.header-area {margin: 0px; float: left;padding-top: 13px;}
+.navigation { float: right;}
+.nav { margin-top:50px;}
+.navigation ul li { float:left; padding-right: 15px;text-transform: uppercase;font-size: 15px;}
+.navigation ul li a { text-decoration: none; color:#fff;font-family: Arial, Helvetica, sans-serif;}
+.footer{
+    width: 100%;
+   background: #4587D9;;
+    height: 39px;overflow: hidden;margin-top: 20px; color:#FFFFFF;padding-top: 20px;
+}
+.footer span { margin-left:480px;}
+.applocation {    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+margin-top: 10px;}
+.form1 { width:100%; margin-bottom: 50px;}
+.form2 { width:100%; margin-bottom: 70px;}
+.form3 { width:100%; margin-bottom: 140px;}
+.namecol {margin-bottom: 13px;    font-size: 20px; font-weight: 600;}
+.namecol2{margin-bottom: 13px;    font-size: 20px;  font-weight: 600;}
+.namecol3{margin-bottom: 13px;    font-size: 20px;font-weight: 600;}
+.input1 { list-style:none; float: left;margin-right: 15px;font-family: Arial, Helvetica, sans-serif;}
+
+
+.address{margin-bottom: 13px;    font-size: 20px; ;
+    font-weight: 600;
+}
+.Street{list-style:none; float: left;margin-top: 15px;margin-right: 15px;font-family: Arial, Helvetica, sans-serif;}
+.input2{ list-style:none; float: left; margin-top: 15px;margin-right: 15px;font-family: Arial, Helvetica, sans-serif;}
+.inputcon {list-style:none; font-family: Arial, Helvetica, sans-serif;margin-right: 15px;margin-top: 15px;}
+
+.Relationship {list-style:none;font-family: Arial, Helvetica, sans-serif;;}
+
+.Emergency{
+    color:#23282D;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;margin: 24px 0px;font-weight: 600;
+}
+.gen { margin-top:20px;}
+.file { margin-top:20px; width:100%;}
+.field_file{ float: left; margin-top:10px;}
+.conn { width:100%; margin-bottom: 200px;}
+.mobile { list-style:none; float: left; margin-top: 15px;margin-right: 15px;font-family: Arial, Helvetica, sans-serif;}
+.email { list-style:none; float: left; margin-top: 15px;margin-right: 15px;font-family: Arial, Helvetica, sans-serif; }
+.birth {
+    margin: 12px 0px;
+}
+.submit   { background-color: #306FBE;
+    border: none;
+    color: #fff;
+    padding: 8px 20px;;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 11px 0px 11px 283px;
+    cursor: pointer;
+}
+.inpucol{background: #e6e6e6;
+border: solid 1px gray;
+color: #666666;}
+.saif { float: right;
+margin-right: 94px;
+margin-top: 255px;font-size: 25px;
+font-weight: 600; font-family:Arial, Helvetica, sans-serif;}
+#per{
+    color: white;
+}   
+#marq{
+    color:orange;
+}## {
+
+}
