@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onresize="resizing()">
+        <p id='p1'></p>
+        <p id='p2'></p>
+    
+        <div>TODO write content</div>
+        <img src="tree.jpg" onerror="error()">
+        <script>
+            
+            var a;
+            function frame(){
+            if(navigator.cookieEnabled==true)
+            {
+                a='cockeeses is enabled';
+            }
+            else{
+                a='cooles is disabled';
+            }
+            document.getElementById('p1').innerHTML=a;
+                
+            }
+            function resizing(){
+                document.getElementById('p2').innerHTML="window has resize";
+            }
+            function error(){
+                document.getElementById('p2').innerHTML="img not available"
+            }
+        </script>
+    </body>
+</html>

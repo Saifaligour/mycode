@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+  
+   <div>
+            <img src="../JpReg/image/Amazing Jungle 1366 x 768 HDTV.jpeg" alt="" id="img1" onclick=""/>
+        </div>
+     <script>  
+            var counter="m";
+        function img()
+        {
+           var image=document.getElementById('img1');
+           
+          if(counter=="m"){
+         image.src="../JpReg/image/Apple Splash 1366 x 768 HDTV.jpeg" ;
+        counter="z";
+        }
+        else
+        {
+            image.src="../JpReg/image/Amazing Jungle 1366 x 768 HDTV.jpeg";
+            counter="m";
+        }
+        
+    }
+    setTimeout('img()',2000);
+        </script>
+    </body>
+</html>

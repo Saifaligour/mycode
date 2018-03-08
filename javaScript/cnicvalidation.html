@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <p>Enter your phone No</p>
+        <form>
+            <input type="text" name="phone" onchange="phone_validation(this)" placeholder="xxxxx-xxx-xxxx">
+        </form>
+        <script>
+       var reg=/^[0-9]{5}-[0-9]{3}-[0-9]{4}/; //xxxxx-xxx-xxxx
+       function phone_validation(ph)
+       {
+           var ok=reg.exec(ph.value);
+           if(!ok)
+           {
+               alert("Invalid Cnic no");
+           }
+           else{
+               alert('Valid Cnic no');
+           }
+       } 
+        </script>  
+</body>
+</html>

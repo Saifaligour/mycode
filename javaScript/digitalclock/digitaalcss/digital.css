@@ -1,0 +1,28 @@
+body{
+    background-color : orange;
+    color: white;
+}
+#clockdate{
+    margin:auto;
+    width: 47%;
+    cursor:default;
+    border-radius:15px; 
+}
+#wraper_clock{
+   padding:  25px;
+   text-align: center;
+   margin-top: 15%;
+   border-radius: 15px;
+}
+#clock_large{
+    font-family: 'areal',sans-serif;
+    font-size: 30px;
+    background-color: black;
+}
+span{
+    color: white;
+    font-size:18px;
+    position: relative;
+    
+
+}

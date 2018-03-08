@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Mouse Events</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        button{
+           padding:35px 40px;
+           margin:20px 5px 10px 5px; 
+        }
+    </style>
+    <body>
+        <h2 id="h1"></h2>
+        <div>
+            
+            <button onclick="mouse_event()">onclick</button>
+            <button ondblclick="mouse_event()">ondbclick</button>
+            <button oncontextmenu="mouse_event()">oncontexmenu</button>
+            <button onmousedown="mouse_event()">onmousedown</button>
+            <button onmouseup="mouse_event()">onmouseup</button>
+            <button onmousewheel="mouse_event()">onmousewheel</button>
+            <button onmouseenter="mouse_event()">onmouseenter</button>
+            <button onmouseleave="mouse_event()">onmouseleave</button>
+            <button onmousemove="mouse_event()">onmousemove</button>
+            <button onmouseover="mouse_event()">onmouseover</button>
+            <button onmouseout="mouse_event()">onmouseout</button>
+            <button  oncancel="mouse_event()">oncencel</button>
+        </div>
+        <script>
+            function mouse_event()
+            {
+                document.getElementById('h1').innerHTML="mouse event has been accured";
+            }
+        </script>
+    </body>
+</html>

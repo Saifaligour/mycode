@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p id="time"></p>
+        <p id="mn"></p>
+        <div>
+            <button onclick="setint()">start</button>
+            <button onclick="clearInterval(c)">stop</button>
+            <button onclick="clearInterval(t)">stop time</button>
+            <button onclick="start()">start time </button>
+           
+            <button onclick="setTimeout('set_timeout()',3000)">set Timeout </button>
+            <p id="d"></p>
+        </div>
+        <script>
+            var c, t,d=20,e;
+            function setint() {
+                c = setInterval('timeints()', 3000);
+            }
+            function timeints() {
+                window.alert('in this page we learn setInterval n ClearInterval');
+
+            }
+
+
+
+
+
+            function settime() {
+                var a = new Date();
+                document.getElementById('time').innerHTML = a.toLocaleString();
+            }
+            function start() {
+                t = setInterval('settime()', 1000);
+            }
+            start();
+            
+             e=setInterval('new_time()',1000);
+            function new_time() {
+                document.getElementById('d').innerHTML = d;
+                d--;
+                if (d<1)
+                {
+                    clearInterval(e);
+                    document.getElementById('d').innerHTML = "<a href='#'>click here to download</b>";
+                }
+            }
+             
+             
+             
+             function set_timeout(){
+               document.getElementById('mn').innerHTML=alert('helo world');
+             }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ <input type="text" id="inp" oninput="input()">
+ <input type="search" id="inp1" onselect="select1()">
+ <p id="p1"></p>
+ <p id="p2"></p>
+<script>
+ function input(){
+    var a= document.getElementById('inp').value;
+    document.getElementById("p1").innerHTML="You wrot:"+"  "+a;
+ }
+ function select1(){
+    var a= document.getElementById('inp1').value;
+    document.getElementById("p2").innerHTML="You select:"+"   "+a;
+ }
+ </script>
+ </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p> Alert Box</p>
+        <p> Prompt Box</p>
+        <p> Confirm Box</p>
+         <div id="content" style="background-color:orange;color:green ;border:1px solid black;padding:20px 20px; margin: 0px 150px 20px 150px;   ">
+             
+         </div>
+        <div align="center">
+                 <button onclick="alt()">Alert box</button>
+                 <button onclick="pmt()"> Prompt Box</button>
+                 <button onclick="con()"> confirm Box</button>
+             </div> 
+        <script>
+            function alt(){
+             alert("this is alert box");   
+            }
+            function pmt(){
+              var p=  prompt("Check this is true or false","Enter true Or False");
+                document.getElementById('content').innerHTML=p;
+            }
+            function con(){
+               var con=confirm("confirm box");
+               if(con===true)
+               {
+                  document.getElementById('content').innerHTML="you click Ok button <style>#content{background-color:blue;}</style>";
+            }
+            else
+                
+        {
+             document.getElementById('content').innerHTML="you click cancel button";
+        }
+    } 
+        </script>
+    </body>
+</html>

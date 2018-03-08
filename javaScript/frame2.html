@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body onhashchange="oncng()">
+ <button onclick="has()">click</button>
+    <p id="p1">cdafnasncasnf dcdsoifjaw cas;edjeoif a</p>
+   <script>
+    function unload(){
+        return "confirm plz"
+    }
+    function has(){
+        window.location.hash="part2";
+        var a=window.location.hash;
+         document.getElementById('p1').innerHTML="now"+a; 
+    }
+    function oncng()
+    {
+        document.alert("ancher has been changed");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body  onresize="resizing()">
+    <p id="p1"></p>
+   <a href="frame.html" > click</a>
+    <img src="tresdse.jpg" onerror="error()"> 
+ <script>
+     function beforunload(){
+         return "please confirm";
+     }
+        function error(){
+         alert("Error");
+        }
+        function resizing(){
+           
+           var a= window.outerWidth;
+           var b= window.outerHeight;
+           var c= "width"+a+"height"+b;
+           document.getElementById('p1').innerHTML="resizing window "+c;
+        }
+        </script>
+</body>
+</html>

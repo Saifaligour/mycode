@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p id="p1"></p>
+        <div>
+            <button onclick="op()">Open New Window</button>
+            <button onclick="col()">Close new Window</button>
+            <button onclick="check()">Close Check Window</button>
+            <button onclick="move1()">Move Window</button>
+            <button onclick="res()">Resize Window</button>
+            <button onclick="scro()">Scroll Window</button>
+        
+        </div>
+        <script>
+            var my_window;
+           function op()
+           {
+             my_window =  window.open("","","width=400,height=400");
+            op.document.write("this is new windows");
+            op.opener.document.write("this is old window");
+             }
+            function col()
+            {
+                if(my_window){
+               my_window.close();
+               }
+            }
+            function check()
+            {
+                if(!my_window)
+                {
+                    document.getElementById("p1").innerHTML="Window has  been  open";
+                }
+                 else{
+                     document.getElementById("p1").innerHTML="Window has not been  open";
+                }
+            }
+            function move1(){
+                my_window.moveBy(60,50);
+               
+            }
+            function res(){
+                my_window.resizeTo(300,400);
+                my_window.focus();
+            }
+            function scro(){
+                my_window.scrollBy(60,0);
+               
+            }
+            
+        </script>
+    </body>
+</html>

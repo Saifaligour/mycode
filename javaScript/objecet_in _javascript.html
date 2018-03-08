@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+//            creat boject directly
+            var car= new Object();
+            car.model="Maruti Suzuki";
+            car.clour="green";
+            car.capacity="430cc";
+            car.type1="auto";
+             document.write("<h1>first type of object</h1>");
+            document.write(car.model+"<br>");
+            document.write(car.clour+"<br>");
+            document.write(car.capacity +"<br>");
+            document.write(car.type1+"<br>");
+//    creat object in one line as an array      
+    var car1={model:"Honda City",colour:"red" ,type1:"auto"};
+           document.write("<h2>this is second method to creat an boject</h2>");
+           for(var i in car1)
+           {
+               document.write(i+"<br>");
+           }
+           document.write("<h3> creating object  with the help of function</h3>");
+//       creat object with the help of function
+           function component()
+           {
+              this.type1="Tata";
+               this.colour1="yellow";
+               this.capacity="500cc";
+           }
+           var car=new component();
+          
+               document.write(car.type1);
+               document.write(car.colour);
+               document.write(car.capacity);
+          
+            </script>
+    </head>
+    <body>
+        <div>with the help of object</div>
+    </body>
+</html>

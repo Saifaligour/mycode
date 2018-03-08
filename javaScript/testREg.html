@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    
+    var com="hi this is for compile ragular expration";
+    var patt4=/compile/g;
+    patt4.compile(patt4);
+    re=com.replace(patt4,"course");
+    document.write(re);
+    document.write("<br>");
+
+    var str2="subscribe our saifali channel for more videos and other things";
+    var patt3= new RegExp("videos");
+    var result3=patt3.exec(str2);
+    document.write(result3);
+    document.write("<br>");
+    
+    var str="subscribe our saifali channel for more videos and other things";
+    var patt=new RegExp("saifali");
+    var result=patt.test(str);
+    document.write(result);
+    document.write("<br>");
+    
+    var str1= new RegExp("hi this is last method of regular Exp");
+    var result1= str1.toString();
+    document.write(result1);     
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p id="p1"></p>
+        <div>
+          <button onclick="wn()">Open New Window</button>
+        </div>
+        <script> 
+            function wn()
+            {
+                var a= window.innerHeight;
+                var b=window.innerWidth;
+                var c=window.outerHeight;
+                var d=window.outerWidth;
+                document.getElementById("p1").innerHTML= "innerHeight="+a+"<br>innerwidth="+b+"<br>outerwidth="+d+"<br>outerheight="+c;
+                }
+        </script>
+    </body>
+</html>

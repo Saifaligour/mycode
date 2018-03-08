@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<select id="sele" onchange="chang()">
+    <option selected="" value="sunday">sunday</option>
+    <option>monday</option>
+    <option>tuesday</option>
+    <option>thursday</option>
+    <option>friday</option>
+    <option>seturday</option>
+    
+</select>   
+    <p id="p1"></p>
+    <script>
+    function chang(){
+        var a=document.getElementById('sele').value;
+        document.getElementById('p1').innerHTML="select day"+" "+a;
+    }
+    </script>
+</body>
+</html>

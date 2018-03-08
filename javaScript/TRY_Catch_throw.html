@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p id="message"></p>
+        <input id="demo" type="text">
+        <button  onclick="myFunction()">Test Input</button> 
+        <script>
+function myFunction() {
+    var msg, x;
+    msg = document.getElementById("message");
+    msg.innerHTML = "hi";
+    x = document.getElementById("demo").value;
+    try { 
+        if(x == "")  throw "empty";
+        if(isNaN(x)) throw "not a number";
+        x = Number(x);
+        if(x < 5)    throw "too low";
+        if(x > 10)   throw "too high";
+    }
+    catch(err) {
+        msg.innerHTML = "Input is " + err;
+    }
+}
+</script>
+    </body>
+</html>

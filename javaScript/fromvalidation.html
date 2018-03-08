@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>using simple method</p>   
+    <input type="text" id="no" >
+    <p>using Event listener</p>
+    <input type="text" id="no1" onblur="conuper()">
+   
+<script>
+         document.getElementById('no').addEventListener("blur",conuper);
+        function conuper(){
+            var a=document.getElementById('no');
+            a.value=a.value.toUpperCase();
+            var a=document.getElementById('no1');
+            a.value=a.value.toUpperCase();
+        }
+
+        
+    
+    </script>
+</body>
+</html>

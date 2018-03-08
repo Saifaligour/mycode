@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <video width="320" height="240" controls onload="load1()" onplay="play1()" onpause="pause1()">
+    <source src="[000021].mp4" type="video/mp4">
+    Your browser does not support the <code>video</code> tag.
+</video>
+<p id=p1></p>
+
+<script>
+  function play1(){
+      document.getElementById('p1').innerHTML="video palying";
+  }  
+  function pause1(){
+      document.getElementById('p1').innerHTML="video pause";
+  }  
+  function load1(){
+      document.getElementById('p1').innerHTML="video loading";
+  }  
+</script>
+</body>
+</html>

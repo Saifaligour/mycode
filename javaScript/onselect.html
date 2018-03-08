@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-U1A-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p11"></p>
+    <form>
+    <input type="search" id="searc"  onsearch="ser()" oninvalid="inva()" >
+    <p id="p1"></p>
+    <input type="text" value="focus"  onfocusout="abc1(this)" oninvalid="inva()" required>
+    <input type="submit" value="submit">
+    </form>
+    <script >
+        function ser(){
+            var a=document.getElementById('searc').value;
+            document.getElementById('p1').innerHTML="you search"+a;
+        }
+        function abc(x){
+            x.style.border="2px solid green";
+            x.style.background="orange";
+        }
+        function abc1(x){
+            
+            x.style.background="white";
+        }
+        function inva(){
+            document.getElementById('p11').innerHTML="Plz Enter all field ";
+        }
+        </script>
+</body>
+</html>

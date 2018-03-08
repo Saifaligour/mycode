@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <script>
+    document.write("<h3> this function use to show the date in browser</h3>");    
+    var date=Date();
+        document.write(date+"<br>");
+        
+    document.write("<h3> this object use to show the date in browser</h3>");    
+    var date1=new Date();
+    date1.setHours(2);
+    date1.setMinutes(23);
+    date1.setSeconds(24);
+    date1.setMonth(2);
+    date1.setMilliseconds(12);
+    date1.setUTCFullYear(2018);
+ 
+        document.write(date1.getHours()+": "+date1.getMinutes()+" :"+date1.getSeconds()+" :"+date1.getMilliseconds()+"  &nbsp; "+date1.getMonth()+"/"+date1.getFullYear());
+        
+    </script>
+    </body>
+</html>

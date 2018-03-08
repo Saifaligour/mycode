@@ -1,0 +1,49 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/stylesheet1.css" rel="stylesheet">
+    </head>
+    <body>
+        <p id="p1" onclick="pr();"> this is the the paragraph teg</p>
+        
+        <script> 
+               function hi()
+            {
+                document.write("hi you are in the java script function");
+            }
+            function pr()
+            {
+           var para = document.getElementById('p1');
+           hi();
+            }
+         
+            function comp()
+          {
+                var first_name="saif";
+                 var second_name="ali";
+                 if ((first_name=="saif") || (second_name=="alasfawefaei"))
+                 {
+                 document.write("sucess");
+                 }else{
+                 document.write("fail");
+             }}
+         function add(num1,num2,num3)
+            {
+                var sum= num1+num2;
+                var str=num3;
+                 document.writeln(sum +"<br>");
+               
+                 document.write(str+"<br>");
+                 
+            }
+            add(3,5,"saifali");
+            comp();
+            </script>
+        <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

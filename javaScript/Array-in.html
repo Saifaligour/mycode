@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+        document.write("<h3>Array Object<br>first step to creat an array </h3><br>");    
+        var new_array= new Array();
+        new_array[0]="saif ali";
+        new_array[1]="manish";
+        new_array[2]="Aasish";
+        new_array[3]="don bane ga kon";
+        new_array[4]="How are you";
+        new_array[5]="thank you";
+  
+    for (var i in new_array)
+    {document.write(new_array[i]+"<br>");}
+    
+    
+    document.write("step 2<br><br>");
+        
+   for(var i=0;i<new_array.length;i++)    
+    document.write(new_array[i]+"<br>");
+    document.write("<br>Third step of creating Array<br><br>");
+    var new_array1=new Array("hi","i am ","Mohd Saif Ali");
+     
+    for (var i in new_array1)
+    {document.write(new_array1[i]+"<br>");}
+    document.write("<br><br> Last step of Array<br><br>");
+    array1=["mohd saif"," thanks"];
+    for(var i in array1)
+    document.write(array1[i]+"<br>");
+    
+     document.write("Methods of Array<br><br>");
+     document.write("<br><br>concatination<BR>");
+    document.write(array1.concat(new_array));
+    
+     document.write("<br><br>join method<br>");
+      document.write(array1.join(","));
+    
+     document.write("<br><br>revers method<br>");
+      document.write(array1.reverse());
+    
+     document.write("<br><br>shift method<br>");
+      document.write(array1.shift());
+      
+     document.write("<br><br>unshift method<br>");
+      document.write(array1.unshift("first element"));
+     document.write(array1.push("new element"));
+      document.write("<br>"+array1);
+         
+     document.write("<br><br>push method<br>");
+      document.write(array1.push("new element"));
+      document.write("<br>"+array1);
+         
+     document.write("<br><br>pop method<br>");
+      document.write(array1.pop("new element"));
+      document.write("<br>"+array1);
+      
+     document.write("<br><br>sort method<br>");
+      document.write(array1.sort());
+     
+    
+    </script>
+    </body>
+</html>

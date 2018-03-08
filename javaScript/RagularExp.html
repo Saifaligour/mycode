@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="text1" type="text" style="width:250px">
+    <br><br>
+    <input type="button" id=b1"" value="click" style="width:200px" onclick="check1()">
+    <br>
+    <br>
+    <textarea name="" id="text2" cols="10" rows="4"></textarea>
+   <script>
+       function check1(){
+
+             document.getElementById('text2').value="";
+           
+        var inputstring=document.getElementById('text1').value;
+        var result=inputstring.match(/\d/g);
+         if(result!==null)
+         { 
+             for (var i=0; i< result.length;i++)
+             document.getElementById('text2').value+=result[i]+"\r";
+         }
+        }
+   </script> 
+</body>
+</html>

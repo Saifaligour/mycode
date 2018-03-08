@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            Enter first value <br>
+            
+            <input type="text" placeholder="Enter only Integer Value" name="first-value"  id="in1"/>
+            <br>
+            Enter second value<br>
+            <input type="text" placeholder="Enter only Integer Value" name="second-value" id="in2"/>
+            <br>
+            <input type="button" onclick="thank();" value="click"/>
+            
+        </form>
+        <p id="p1"></p>
+        <script>
+            function  thank()
+            {
+                var value1 =document.getElementById('in1').value;
+                var value2 =document.getElementById('in2').value;
+              document.getElementById('p1').innerHTML=( parseInt(value1) + parseInt(value2));
+               
+
+            }
+            
+        </script>
+    </body>
+</html>
